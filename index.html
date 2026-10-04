@@ -1,0 +1,176 @@
+<DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BobrCoffee — кофейня в центре города</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Bobr<span>Coffee</span></a>
+
+      <nav class="nav">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Свежий кофе<br>каждое утро</h1>
+          <p>Обжарка на месте, зерно из Эфиопии и Колумбии. Заходи в BobrCoffee за своим идеальным капучино.</p>
+          <a href="#contact" class="btn btn--primary">Забронировать столик</a>
+        </div>
+        <div class="hero__cup">
+          <div class="steam"></div>
+          <div class="steam steam--2"></div>
+          <div class="steam steam--3"></div>
+          <div class="cup">☕</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__img">🦫</div>
+        <div class="about__text">
+          <h2>О нас</h2>
+          <p>BobrCoffee открылся в 2018 году как маленькая обжарочная мастерская. Сегодня это место, где можно выпить лучший кофе в городе и просто отдохнуть.</p>
+          <p>Каждое зерно мы отбираем вручную и обжариваем прямо здесь — поэтому вкус у нашего кофе такой насыщенный.</p>
+          <ul class="about__list">
+            <li>Своя обжарка зерна</li>
+            <li>Десерты ручной работы</li>
+            <li>Уютный интерьер</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="section-title">Наше меню</h2>
+
+        <div class="menu__grid">
+          <article class="card">
+            <div class="card__img">☕</div>
+            <span class="card__badge">Хит</span>
+            <h3>Капучино</h3>
+            <p>Классика с плотной молочной пенкой</p>
+            <span class="card__price">250 ₽</span>
+          </article>
+
+          <article class="card">
+            <div class="card__img">🥛</div>
+            <h3>Латте</h3>
+            <p>Мягкий вкус с добавлением карамели</p>
+            <span class="card__price">280 ₽</span>
+          </article>
+
+          <article class="card">
+            <div class="card__img">🍵</div>
+            <h3>Матча-латте</h3>
+            <p>Японский зелёный чай с молоком</p>
+            <span class="card__price">320 ₽</span>
+          </article>
+
+          <article class="card">
+            <div class="card__img">🍰</div>
+            <span class="card__badge">Новинка</span>
+            <h3>Чизкейк</h3>
+            <p>Нежный десерт к кофе</p>
+            <span class="card__price">290 ₽</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="review">
+            <p>Лучший капучино, что я пробовал! Атмосфера — огонь.</p>
+            <cite>— Анна</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>Хожу в BobrCoffee каждое утро перед работой. Персонал супер.</p>
+            <cite>— Иван</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>Уютно, вкусно, есть Wi-Fi. Идеально для работы.</p>
+            <cite>— Мария</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <h2>Забронируйте столик</h2>
+          <p>Оставьте заявку — мы позвоним и подтвердим бронь в BobrCoffee.</p>
+          <p>📍 ул. Кофейного-Бобра, 12/3 <br>🕒 Ежедневно 8:00–22:00<br>📞 +7 (999) 123-45-67</p>
+        </div>
+
+        <form class="form" novalidate>
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input id="name" name="name" type="text" placeholder="Иван" required minlength="2">
+          </div>
+
+          <div class="form__group">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (999) 000-00-00" required pattern="[0-9+\s()-]{10,}">
+          </div>
+
+          <div class="form__group">
+            <label for="date">Дата и время</label>
+            <input id="date" name="date" type="datetime-local" required>
+          </div>
+
+          <div class="form__group">
+            <label for="guests">Гостей</label>
+            <select id="guests" name="guests">
+              <option>1–2</option>
+              <option>3–4</option>
+              <option>5+</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--primary form__btn">Забронировать</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 BobrCoffee. Все права защищены.</p>
+
+      <form class="subscribe" id="subscribe">
+        <input type="email" placeholder="Ваш email для новостей" required>
+        <button type="submit" class="btn btn--accent">Подписаться</button>
+      </form>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
